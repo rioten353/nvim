@@ -13,10 +13,13 @@ vim.keymap.set("n", "<c-j>", ":wincmd j<CR>")
 vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 
+-- save files
+vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save File" })
+
 vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
 vim.wo.number = true
 
 local api = vim.api
 
-api.nvim_set_keymap("n", "<leader><C-c>", "gtc", { noremap = false })
-api.nvim_set_keymap("v", "<leader><C-c>", "goc", { noremap = false })
+api.nvim_set_keymap("n", "<C-c>", "gtc", { noremap = false })
+api.nvim_set_keymap("v", "<C-c>", "goc", { noremap = false })
