@@ -41,7 +41,7 @@ map("n", "<leader>fg", builtin.live_grep, { desc = 'Live Grep' })
 map("n", "<leader><leader>", builtin.oldfiles, { desc = "Find Old Files" })
 
 -- toggle-term
--- map("n", "<leader>rt", ":ToggleTerm direction=float size=30<CR>")
+map("n", "<leader>rt", ":ToggleTerm direction=float size=30<CR>")
 
 -- Navigate vim panes better
 map("n", "<c-k>", ":wincmd k<CR>")
