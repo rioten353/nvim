@@ -31,12 +31,32 @@ map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = 'Code Action' })
 map("n", "<leader>e", ":Neotree filesystem reveal left<CR>", { desc = "File Explorer" })
 map("n", "<leader>bf", ":Neotree buffers reveal float<CR>", { desc = "Buffer Explorer" })
 
+-- none-ls
+map("n", "<leader>gf", vim.lsp.buf.format, { desc = "format file" })
+
+-- telescope
+local builtin = require("telescope.builtin")
+map("n", "<leader>fp", builtin.find_files, { desc = 'Find Files' })
+map("n", "<leader>fg", builtin.live_grep, { desc = 'Live Grep' })
+map("n", "<leader><leader>", builtin.oldfiles, { desc = "Find Old Files" })
+
+-- toggle-term
+-- map("n", "<leader>rt", ":ToggleTerm direction=float size=30<CR>")
 
 -- Navigate vim panes better
 map("n", "<c-k>", ":wincmd k<CR>")
 map("n", "<c-j>", ":wincmd j<CR>")
 map("n", "<c-h>", ":wincmd h<CR>")
 map("n", "<c-l>", ":wincmd l<CR>")
+
+-- test
+map("n", "<leader>t", ":TestNearest<CR>", { desc = "TestNearest" })
+map("n", "<leader>T", ":TestFile<CR>", { desc = "TestFile" })
+map("n", "<leader>a", ":TestSuite<CR>", { desc = "TestSuite" })
+map("n", "<leader>l", ":TestLast<CR>", { desc = "TestLast" })
+map("n", "<leader>g", ":TestVisit<CR>", { desc = "TestVisit" })
+vim.cmd("let test#strategy = 'vimux'")
+
 
 -- save files
 map({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save File" })
