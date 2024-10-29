@@ -6,8 +6,6 @@ return {
 		"nvim-tree/nvim-web-devicons",
 		"MunifTanjim/nui.nvim",
 	},
-	config = function()
-		vim.keymap.set("n", "<leader>e", ":Neotree filesystem reveal left<CR>", {desc="File Explorer"})
-		vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {desc="Buffer Explorer"})
-	end,
+	-- config = function()
+	-- end,
 }

@@ -35,12 +35,6 @@ return {
       lspconfig.dartls.setup({
         capabilities = capabilities,
       })
-
-      vim.keymap.set("n", "<leader>K", vim.lsp.buf.hover, {desc = 'Lsp hover'})
-      vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {desc="Lsp definition"})
-      vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {desc="Lsp references"})
-      vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {desc='Code Action'})
-
     end,
   },
 }
