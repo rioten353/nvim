@@ -18,5 +18,5 @@ vim.wo.number = true
 
 local api = vim.api
 
-api.nvim_set_keymap("n", "<C-c>", "gtc", { noremap = false })
-api.nvim_set_keymap("v", "<C-c>", "goc", { noremap = false })
+api.nvim_set_keymap("n", "<leader><C-c>", "gtc", { noremap = false })
+api.nvim_set_keymap("v", "<leader><C-c>", "goc", { noremap = false })
