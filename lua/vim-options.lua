@@ -16,6 +16,12 @@ map("i", "<C-l>", "<Right>", { desc = "move right" })
 map("i", "<C-j>", "<Down>", { desc = "move down" })
 map("i", "<C-k>", "<Up>", { desc = "move up" })
 
+map("n", "<Esc>", "<cmd>noh<CR>", { desc = "general clear highlights" })
+
+map("n", "<leader>n", "<cmd>set nu!<CR>", { desc = "toggle line number" })
+map("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "toggle relative number" })
+
+
 -- Navigate vim panes better
 map("n", "<c-k>", ":wincmd k<CR>")
 map("n", "<c-j>", ":wincmd j<CR>")
