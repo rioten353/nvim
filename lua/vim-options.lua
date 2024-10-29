@@ -16,6 +16,10 @@ vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 -- save files
 vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save File" })
 
+-- New File
+vim.keymap.set("n", "<leader>fn", "<cmd>enew<cr>", { desc = "New File" })
+
+
 vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
 vim.wo.number = true
 
