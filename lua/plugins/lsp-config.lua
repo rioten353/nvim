@@ -11,6 +11,8 @@ return {
     lazy = false,
     opts = {
       auto_install = true,
+      -- ensure_installed = { "lua_ls", "rust_analyzer" }
+
     },
   },
   {
@@ -25,6 +27,10 @@ return {
       --  })
 
       lspconfig.lua_ls.setup({
+        capabilities = capabilities,
+      })
+
+      lspconfig.rust_analyzer.setup({
         capabilities = capabilities,
       })
 
