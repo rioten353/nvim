@@ -48,6 +48,7 @@ map("n", "<leader>l", ":TestLast<CR>", { desc = "TestLast" })
 map("n", "<leader>g", ":TestVisit<CR>", { desc = "TestVisit" })
 vim.cmd("let test#strategy = 'vimux'")
 
+--Todo 
 map("n", "<leader>I", ":TodoTelescope<CR>", {desc="TodoTelescope"})
 
 -- save files
@@ -56,9 +57,8 @@ map({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save File" })
 -- New File
 map("n", "<leader>fn", "<cmd>enew<cr>", { desc = "New File" })
 
-
-map("n", "<leader>h", ":nohlsearch<CR>")
-vim.wo.number = true
+--alpha
+map("n", "<leader>h", ":Alpha<CR>", {desc="Alpha"})
 
 local api = vim.api
 

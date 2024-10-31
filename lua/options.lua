@@ -60,5 +60,6 @@ g.loaded_ruby_provider = 0
 g.mapleader = " "
 g.background = "light"
 
+vim.wo.number = true
 
 
