@@ -48,6 +48,7 @@ map("n", "<leader>l", ":TestLast<CR>", { desc = "TestLast" })
 map("n", "<leader>g", ":TestVisit<CR>", { desc = "TestVisit" })
 vim.cmd("let test#strategy = 'vimux'")
 
+map("n", "<leader>I", ":TodoTelescope<CR>", {desc="TodoTelescope"})
 
 -- save files
 map({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save File" })
