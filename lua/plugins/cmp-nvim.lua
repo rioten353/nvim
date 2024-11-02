@@ -7,12 +7,14 @@ return {
     dependencies = {
       "saadparwaiz1/cmp_luasnip",
       "rafamadriz/friendly-snippets",
+      "onsails/lspkind.nvim",
     },
   },
   {
     "hrsh7th/nvim-cmp",
     config = function()
       local cmp = require("cmp")
+      local lspkind = require("lspkind")
       require("luasnip.loaders.from_vscode").lazy_load()
 
       cmp.setup({
@@ -33,11 +35,18 @@ return {
           ["<CR>"] = cmp.mapping.confirm({ select = true }),
         }),
         sources = cmp.config.sources({
+          -- { name = "codeium" },
           { name = "nvim_lsp" },
           { name = "luasnip" }, -- For luasnip users.
-        }, {
           { name = "buffer" },
         }),
+        formatting = {
+          format = lspkind.cmp_format({
+            maxwidth = 50,
+            ellipsis_char = "...",
+            -- symbol_map = { Codeium = "" },
+          }),
+        },
       })
     end,
   },
