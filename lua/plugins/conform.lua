@@ -6,6 +6,7 @@ return {
 			formatters_by_ft = {
 
 				lua = { "stylua" },
+				dart = { "dartls" },
 				-- css = { "prettier" },
 				-- html = { "prettier" },
 			},
