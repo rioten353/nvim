@@ -68,6 +68,9 @@ map("n", "<leader>h", ":Alpha<CR>", { desc = "󰠅 Alpha" })
 --quit all
 map("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
 
+--make jk key to ESC
+map("i", "jk", "<esc>", { desc = "Normal Mode" })
+
 -- windows
 map("n", "<leader>w", "<c-w>", { desc = "Windows", remap = true })
 map("n", "<leader>-", "<C-W>s", { desc = "Split Window Below", remap = true })
