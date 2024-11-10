@@ -71,6 +71,16 @@ map("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
 --make jk key to ESC
 map("i", "jk", "<esc>", { desc = "Normal Mode" })
 
+--flutter tools
+map("n", "<leader>fd", "<cmd> FlutterDevices <CR>", { desc = "Flutter devices" })
+map("n", "<leader>fD", "<cmd> FlutterDetatch <CR>", { desc = "Flutter detatch" })
+map("n", "<leader>ff", "<cmd> FlutterRun <CR>", { desc = "Flutter run" })
+map("n", "<leader>fq", "<cmd> FlutterQuit <CR>", { desc = "Flutter quit" })
+map("n", "<leader>fr", "<cmd> FlutterReload <CR>", { desc = "Flutter reload" })
+map("n", "<leader>fR", "<cmd> FlutterRestart <CR>", { desc = "Flutter restart" })
+map("n", "<leader>fU", "<cmd> FlutterPubUpgrade <CR>", { desc = "Flutter pub upgrade" })
+map("n", "<leader>fu", "<cmd> FlutterPubGet <CR>", { desc = "Flutter pub get" })
+
 -- windows
 map("n", "<leader>w", "<c-w>", { desc = "Windows", remap = true })
 map("n", "<leader>-", "<C-W>s", { desc = "Split Window Below", remap = true })
