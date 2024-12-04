@@ -28,6 +28,7 @@ map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
 
 -- Neo Tree
 map("n", "<leader>e", ":Neotree filesystem reveal left<CR>", { desc = "File Explorer" })
+map("n", "<leader>rr", ":Neotree filesystem reveal right<CR>", { desc = "File Explorer" })
 map("n", "<leader>bf", ":Neotree buffers reveal float<CR>", { desc = "Buffer Explorer" })
 map("n", "<leader>qe", ":Neotree close<CR>", { desc = "Close File Explorer" })
 
