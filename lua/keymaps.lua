@@ -45,14 +45,6 @@ map("n", "<c-j>", ":wincmd j<CR>")
 map("n", "<c-h>", ":wincmd h<CR>")
 map("n", "<c-l>", ":wincmd l<CR>")
 
--- test
-map("n", "<leader>t", ":TestNearest<CR>", { desc = "TestNearest" })
-map("n", "<leader>T", ":TestFile<CR>", { desc = "TestFile" })
-map("n", "<leader>a", ":TestSuite<CR>", { desc = "TestSuite" })
-map("n", "<leader>l", ":TestLast<CR>", { desc = "TestLast" })
-map("n", "<leader>g", ":TestVisit<CR>", { desc = "TestVisit" })
-vim.cmd("let test#strategy = 'vimux'")
-
 --Todo
 map("n", "<leader>I", ":TodoTelescope<CR>", { desc = "TodoTelescope" })
 
